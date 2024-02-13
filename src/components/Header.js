@@ -1,5 +1,6 @@
 import logo from '../assets/logo.svg';
 import '../styles/header.scss';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -8,20 +9,8 @@ function Header() {
         <img src={logo} alt="logo" />
       </div>
       <div className="App-menu">
-        <a
-          href="#top"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Accueil
-        </a>
-        <a
-          href="#top"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          A Propos
-        </a>
+        <Link to="/">Accueil</Link>
+        <Link to="/about">About</Link>
       </div>
     </header>
   );
