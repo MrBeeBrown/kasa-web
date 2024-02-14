@@ -1,0 +1,28 @@
+.main {
+  max-width: 1240px;
+  margin: 2rem auto 2rem auto;
+}
+.main-header {
+  background: rgba(0, 0, 0, 0.2) url("../assets/main-bg.png");
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 48px;
+  color: white;
+}
+
+.main-content {
+  max-width: 1240px;
+  height: 829px;
+  background-color: #f6f6f6;
+  margin-top: 2rem;
+  border-radius: 25px;
+}

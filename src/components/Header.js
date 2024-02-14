@@ -10,7 +10,7 @@ function Header() {
       </div>
       <div className="App-menu">
         <Link to="/">Accueil</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">A Propos</Link>
       </div>
     </header>
   );

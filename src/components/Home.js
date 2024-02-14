@@ -7,7 +7,14 @@ function Home() {
     <div>
       <Header>
       </Header>
+      <div className='main'>
+        <div className='main-header'>
+          <p className='main-title'>Chez vous, partout et ailleurs</p>
+        </div>
+        <div className='main-content'>
 
+        </div>
+      </div>
       <Footer>
       </Footer>
     </div>

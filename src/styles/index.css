@@ -4,12 +4,17 @@
 }
 
 @font-face {
-  font-family: Montserrat;
-  src: url('/public/fonts/Montserrat-Regular.ttf');
+  font-family: "Montserrat";
+  src: url("/public/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/public/fonts/Montserrat-ExtraBold.ttf");
 }
 
 body {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
