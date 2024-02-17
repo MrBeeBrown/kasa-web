@@ -1,0 +1,9 @@
+.logement {
+  display: flex;
+  flex-direction: column;
+
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+  }
+}
