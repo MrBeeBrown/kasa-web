@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
   }
 
   &-title {
@@ -26,9 +27,9 @@
     max-width: 1240px;
     height: 829px;
     background-color: #f6f6f6;
-    margin-top: 2rem;
     border-radius: 25px;
     overflow-y: scroll;
+    padding-bottom: 3rem;
   }
 }
 
@@ -36,7 +37,7 @@
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  margin: 1rem;
+  margin-top: 3rem;
   position: relative;
   cursor: pointer;
 

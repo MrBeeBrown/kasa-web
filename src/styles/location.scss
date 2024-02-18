@@ -1,8 +1,96 @@
 .logement {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  width: 100%;
 
   &__infos {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__carrousel {
+    width: 100%;
+    height: 415px;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
+  &__infos {
+    width: 100%;
+    height: 150px;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #ff6060;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__city {
+    font-size: 18px;
+    color: #ff6060;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 2rem;
+
+    p {
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 0.2rem 0.5rem;
+      background-color: #ff6060;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  &__rate {
+    width: 100%;
+  }
+
+  &__host {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    &__name {
+      font-size: 18px;
+      color: #ff6060;
+      font-weight: 600;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+
+  &__data {
     display: flex;
     justify-content: space-between;
   }
