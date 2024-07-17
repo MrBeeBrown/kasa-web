@@ -51,16 +51,39 @@
   padding: 0 2rem;
 }
 
-.section:after {
+/* .section:after {
   content: "";
-  background-image: url(../assets/chevron-down-solid.svg);
+  background-image: url(../assets/chevron-up-solid.svg);
   width: 30px;
   height: 30px;
   float: right;
   margin-right: 0.7rem;
+} */
+
+.section-title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    right: 1rem;
+    width: 30px;
+  }
 }
 
 .hidden {
   display: none;
   overflow: hidden;
+}
+
+.icon {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease-in-out;
 }
