@@ -1,0 +1,48 @@
+.logement__carrousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25px;
+
+  .active {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .chevron {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+  }
+
+  .chevron_left {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .chevron_right {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 900;
+    font-size: 1.6rem;
+  }
+}
