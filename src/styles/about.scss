@@ -33,7 +33,6 @@
   border-radius: 5px;
   font-size: 24px;
   padding-left: 1rem;
-  cursor: pointer;
 }
 
 .section-panel {
@@ -41,24 +40,21 @@
   padding: 1rem 0;
   width: 100%;
   max-width: 1023px;
+  max-height: 300px;
+  overflow: hidden;
   background-color: #f6f6f6;
   color: #ff6060;
   font-size: 20px;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.4s ease-in-out;
+  opacity: 1;
 }
 
-.section-panel > p {
+.show {
   margin: 1rem auto;
   padding: 0 2rem;
 }
-
-/* .section:after {
-  content: "";
-  background-image: url(../assets/chevron-up-solid.svg);
-  width: 30px;
-  height: 30px;
-  float: right;
-  margin-right: 0.7rem;
-} */
 
 .section-title {
   position: relative;
@@ -70,12 +66,17 @@
     position: absolute;
     right: 1rem;
     width: 30px;
+    cursor: pointer;
   }
 }
 
 .hidden {
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .icon {
