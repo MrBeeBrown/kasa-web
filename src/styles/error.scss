@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .Error-number {
@@ -24,4 +25,34 @@
   color: #ff6060;
   font-weight: 400;
   margin-bottom: 5rem;
+}
+
+@media screen and (600px < width < 1080px) {
+  .Error-number {
+    font-size: 10rem;
+  }
+
+  .Error-text {
+    font-size: 1.7rem;
+    width: 60%;
+  }
+
+  .Error-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Error-number {
+    font-size: 6rem;
+  }
+
+  .Error-text {
+    font-size: 1.125rem;
+    width: 60%;
+  }
+
+  .Error-link {
+    font-size: 0.875rem;
+  }
 }

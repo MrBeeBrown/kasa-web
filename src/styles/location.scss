@@ -9,21 +9,6 @@
     justify-content: space-between;
   }
 
-  /* &__carrousel {
-    width: 100%;
-    height: 415px;
-    margin-bottom: 2rem;
-
-    img {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      object-fit: cover;
-      border-radius: 25px;
-    }
-  } */
-
   &__infos {
     width: 100%;
     height: 150px;
@@ -108,7 +93,15 @@
         width: 30px;
         cursor: pointer;
       }
-      p {
+
+      &__title {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      &__data {
         background-color: #f6f6f6;
         color: #ff6060;
         width: fit-content;
@@ -117,10 +110,12 @@
         padding: 2rem 1rem;
         font-size: 18px;
         line-height: 1.4rem;
+        max-height: 300px;
+        height: auto;
+        opacity: 1;
         transition:
           max-height 0.3s ease-in-out,
-          opacity 0.4s ease-in-out;
-        opacity: 1;
+          opacity 0.3s ease-in-out;
       }
     }
 
@@ -137,13 +132,27 @@
         width: 30px;
         cursor: pointer;
       }
-      p {
+
+      &__title {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      &__data {
         background-color: #f6f6f6;
         color: #ff6060;
         max-width: 500px;
         width: 100%;
         margin: 0;
         padding: 2rem 1rem;
+        max-height: 300px;
+        height: auto;
+        opacity: 1;
+        transition:
+          max-height 0.3s ease-in-out,
+          opacity 0.3s ease-in-out;
         li {
           list-style-type: none;
           font-size: 18px;
@@ -154,11 +163,12 @@
 
     .hidden {
       display: none;
+      max-height: 0;
       overflow: hidden;
+      opacity: 0;
       transition:
         max-height 0.3s ease-in-out,
         opacity 0.3s ease-in-out;
-      opacity: 0;
     }
 
     .icon {
@@ -184,32 +194,4 @@
     text-align: start;
     padding-left: 1rem;
   }
-}
-
-.description__data {
-  max-width: 500px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.equipement__data {
-  max-width: 500px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-#description {
-  transition:
-    max-height 0.3s ease-in-out,
-    opacity 0.4s ease-in-out;
-  opacity: 1;
-}
-
-#equipement {
-  transition:
-    max-height 0.3s ease-in-out,
-    opacity 0.4s ease-in-out;
-  opacity: 1;
 }

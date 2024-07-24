@@ -12,11 +12,12 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="Home">
       <Header />
       <div className='main'>
         <div className='main-header'>
-          <p className='main-title'>Chez vous, partout et ailleurs</p>
+          <p className='main-title'>Chez vous,</p>
+          <p className='main-title'>partout et ailleurs</p>
         </div>
         <div className='main-content'>
           {

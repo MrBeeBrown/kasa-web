@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Error() {
   return (
-    <div>
+    <div className="Home">
       <Header />
       <div className='Error'>
         <p className='Error-number'>404</p>

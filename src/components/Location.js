@@ -39,7 +39,7 @@ function Location() {
   }
 
   return (
-    <div>
+    <div className="Home">
       <Header />
       <div className='main'>
         <div className='logement'>
@@ -69,22 +69,22 @@ function Location() {
           </div>
           <div className='logement__data'>
             <div className='description'>
-              <div className='description__data'>
+              <div className='description__title'>
                 <button className='logement__section'>Description</button>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={showItemDescription ? "rotate" : "icon"} onClick={() => toggleShowDescription()}>
                   <path fill="#FFFFFF" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
                 </svg>
               </div>
-              <p id='description' className={showItemDescription ? 'show' : 'hidden'}>{logement[0].description}</p>
+              <p className={showItemDescription ? 'description__data' : 'hidden'}>{logement[0].description}</p>
             </div>
             <div className='equipement'>
-              <div className='equipement__data'>
+              <div className='equipement__title'>
                 <button className='logement__section'>Équipement</button>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={showItemEquipement ? "rotate" : "icon"} onClick={() => toggleShowEquipement()}>
                   <path fill="#FFFFFF" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
                 </svg>
               </div>
-              <p id='equipement' className={showItemEquipement ? 'show' : 'hidden'}>{logement[0].equipments.map((equipement) => { return <li key={equipement}>{equipement}</li> })}</p>
+              <p className={showItemEquipement ? 'equipement__data' : 'hidden'}>{logement[0].equipments.map((equipement) => { return <li key={equipement}>{equipement}</li> })}</p>
             </div>
           </div>
         </div>

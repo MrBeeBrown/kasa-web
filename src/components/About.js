@@ -6,7 +6,7 @@ import '../styles/about.scss';
 
 function About() {
   return (
-    <div>
+    <div className="Home">
       <Header />
       <div className='about'>
         <div className='about-header'>
