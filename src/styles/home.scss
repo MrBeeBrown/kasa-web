@@ -1,5 +1,6 @@
 .main {
   max-width: 1240px;
+  width: 100%;
   margin: 2rem auto 2rem auto;
 
   &-header {
@@ -29,45 +30,43 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 1240px;
-    /* height: 829px; */
     background-color: #f6f6f6;
     border-radius: 25px;
-    /* overflow-y: scroll; */
     padding-bottom: 3rem;
-  }
-}
 
-.card {
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  margin-top: 3rem;
-  position: relative;
-  cursor: pointer;
+    .card {
+      width: 340px;
+      height: 340px;
+      border-radius: 10px;
+      margin-top: 3rem;
+      position: relative;
+      cursor: pointer;
 
-  .gradient {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to top, black, transparent);
-  }
+      .gradient {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to top, black, transparent);
+      }
 
-  img {
-    padding: 0;
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-  }
+      img {
+        padding: 0;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+      }
 
-  p {
-    position: relative;
-    bottom: 20%;
-    width: 70%;
-    padding-left: 1rem;
-    color: white;
+      p {
+        position: relative;
+        bottom: 20%;
+        width: 70%;
+        padding-left: 1rem;
+        color: white;
+      }
+    }
   }
 }
 
@@ -104,10 +103,8 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       max-width: 759px;
-      /* height: 829px; */
       background-color: #ffffff;
       border-radius: 25px;
-      /* overflow-y: scroll; */
       padding-bottom: 0 0.3rem 3rem 0.3rem;
     }
   }
@@ -146,10 +143,8 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       max-width: 1250px;
-      /* height: 829px; */
       background-color: #ffffff;
       border-radius: 25px;
-      /* overflow-y: scroll; */
       padding-bottom: 0 0.3rem 3rem 0.3rem;
     }
   }
@@ -222,10 +217,8 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       max-width: 600px;
-      /* height: 829px; */
       background-color: #ffffff;
       border-radius: 25px;
-      /* overflow-y: scroll; */
       padding-bottom: 0 0.3rem 3rem 0.3rem;
     }
   }

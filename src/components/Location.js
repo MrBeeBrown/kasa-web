@@ -54,7 +54,7 @@ function Location() {
                 })}
               </div>
             </div>
-            <div className='logement_rate'>
+            <div className='logement__rate'>
               <div className='logement__host'>
                 <div className='logement__host__name'>
                   <p>{hostname[0]}</p>

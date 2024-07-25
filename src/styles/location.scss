@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  max-width: 1240px;
   width: 100%;
 
   &__infos {
@@ -52,7 +53,7 @@
   }
 
   &__rate {
-    width: 100%;
+    width: 20%;
   }
 
   &__host {
@@ -79,10 +80,12 @@
   &__data {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .description {
       position: relative;
       max-width: 500px;
+      min-width: 300px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -122,6 +125,7 @@
     .equipement {
       position: relative;
       max-width: 500px;
+      min-width: 300px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -193,5 +197,210 @@
     font-family: "Montserrat";
     text-align: start;
     padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logement {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 1240px;
+    width: 100%;
+
+    &__infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__infos {
+      width: 100%;
+      height: auto;
+    }
+
+    &__title {
+      font-size: 36px;
+      color: #ff6060;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    &__city {
+      font-size: 20px;
+      color: #ff6060;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &__location {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__tags {
+      display: flex;
+      gap: 1rem;
+
+      p {
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 0.2rem 1.5rem;
+        background-color: #ff6060;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+
+    &__rate {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__host {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+
+      &__name {
+        font-size: 20px;
+        color: #ff6060;
+        font-weight: 600;
+      }
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        padding: 0;
+      }
+    }
+
+    &__data {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .description {
+        position: relative;
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg {
+          position: absolute;
+          right: 1rem;
+          width: 30px;
+          cursor: pointer;
+        }
+
+        &__title {
+          max-width: 1024px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        &__data {
+          background-color: #f6f6f6;
+          color: #ff6060;
+          width: fit-content;
+          width: -moz-fit-content;
+          margin: 0;
+          padding: 2rem 1rem;
+          font-size: 18px;
+          line-height: 1.4rem;
+          max-height: 300px;
+          height: auto;
+          opacity: 1;
+          transition:
+            max-height 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+        }
+      }
+
+      .equipement {
+        position: relative;
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg {
+          position: absolute;
+          right: 1rem;
+          width: 30px;
+          cursor: pointer;
+        }
+
+        &__title {
+          max-width: 1024px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        &__data {
+          background-color: #f6f6f6;
+          color: #ff6060;
+          max-width: 1024px;
+          width: 100%;
+          margin: 0;
+          padding: 2rem 1rem;
+          max-height: 300px;
+          height: auto;
+          opacity: 1;
+          transition:
+            max-height 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+          li {
+            list-style-type: none;
+            font-size: 18px;
+            line-height: 1.4rem;
+          }
+        }
+      }
+
+      .hidden {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition:
+          max-height 0.3s ease-in-out,
+          opacity 0.3s ease-in-out;
+      }
+
+      .icon {
+        transform: rotate(0deg);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .rotate {
+        transform: rotate(-180deg);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    &__section {
+      background-color: #ff6060;
+      color: white;
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+      border: none;
+      font-size: 20px;
+      font-family: "Montserrat";
+      text-align: start;
+      padding-left: 1rem;
+    }
   }
 }
