@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 2rem auto 0 auto;
-  padding: 0.3rem;
+  padding: 0.5rem;
 
   .App-logo > a > img {
     width: 210px;
@@ -16,9 +16,9 @@
   }
 
   .App-menu {
-    width: 20%;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     color: #ff6060;
     text-decoration: none;
 
@@ -45,7 +45,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto 0 auto;
-    padding: 0.3rem;
+    padding: 0.5rem;
 
     .App-logo > a > img {
       width: 210px;
@@ -54,7 +54,6 @@
     }
 
     .App-menu {
-      width: 35%;
       display: flex;
       justify-content: space-between;
       color: #ff6060;
@@ -79,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto 0 auto;
-    padding: 0.3rem;
+    padding: 0.5rem;
 
     .App-logo > a > img {
       width: 147px;
@@ -88,14 +87,14 @@
     }
 
     .App-menu {
-      width: 35%;
       display: flex;
       justify-content: space-between;
+      gap: 1rem;
       color: #ff6060;
       text-decoration: none;
 
       a {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
         color: #ff6060;
         text-decoration: none;

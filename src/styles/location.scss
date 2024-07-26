@@ -5,6 +5,13 @@
   max-width: 1240px;
   width: 100%;
 
+  &__carrousel {
+    .chevron {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
   &__infos {
     display: flex;
     justify-content: space-between;
@@ -110,8 +117,8 @@
       &__data {
         background-color: #f6f6f6;
         color: #ff6060;
-        width: fit-content;
         width: -moz-fit-content;
+        width: fit-content;
         margin: 0;
         padding: 2rem 1rem;
         font-size: 18px;
@@ -327,8 +334,8 @@
         &__data {
           background-color: #f6f6f6;
           color: #ff6060;
-          width: fit-content;
           width: -moz-fit-content;
+          width: fit-content;
           margin: 0;
           padding: 2rem 1rem;
           font-size: 18px;
@@ -422,6 +429,12 @@
 
 @media screen and (max-width: 600px) {
   .logement {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 600px;
+    width: 100%;
+
     &__carrousel {
       .chevron {
         width: 45px;
