@@ -12,8 +12,8 @@ function Location() {
   const logement = logements.filter((e) => e.id === params.id);
   const hostname = logement[0].host.name.split(" ");
 
-  const [showItemDescription, setShowItemDescription] = useState(true);
-  const [showItemEquipement, setShowItemEquipement] = useState(true);
+  const [showItemDescription, setShowItemDescription] = useState(false);
+  const [showItemEquipement, setShowItemEquipement] = useState(false);
 
   const toggleShowDescription = () => {
     setShowItemDescription(!showItemDescription);
