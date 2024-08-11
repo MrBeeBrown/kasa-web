@@ -124,11 +124,9 @@
         font-size: 18px;
         line-height: 1.4rem;
         max-height: 300px;
-        height: auto;
+        height: calc(auto);
         opacity: 1;
-        transition:
-          max-height 0.3s ease-in-out,
-          opacity 0.3s ease-in-out;
+        transition: all 0.6s ease-in-out;
       }
     }
 
@@ -162,11 +160,9 @@
         margin: 0;
         padding: 2rem 1rem;
         max-height: 300px;
-        height: auto;
+        height: calc(auto);
         opacity: 1;
-        transition:
-          max-height 0.3s ease-in-out,
-          opacity 0.3s ease-in-out;
+        transition: all 0.6s ease-in-out;
         li {
           list-style-type: none;
           font-size: 18px;
@@ -176,13 +172,9 @@
     }
 
     .hidden {
-      display: none;
-      max-height: 0;
+      height: 0;
       overflow: hidden;
       opacity: 0;
-      transition:
-        max-height 0.3s ease-in-out,
-        opacity 0.3s ease-in-out;
     }
 
     .icon {
@@ -341,11 +333,9 @@
           font-size: 18px;
           line-height: 1.4rem;
           max-height: 300px;
-          height: auto;
+          height: calc(auto);
           opacity: 1;
-          transition:
-            max-height 0.3s ease-in-out,
-            opacity 0.3s ease-in-out;
+          transition: all 0.6s ease-in-out;
         }
       }
 
@@ -378,11 +368,9 @@
           margin: 0;
           padding: 2rem 1rem;
           max-height: 300px;
-          height: auto;
+          height: calc(auto);
           opacity: 1;
-          transition:
-            max-height 0.3s ease-in-out,
-            opacity 0.3s ease-in-out;
+          transition: all 0.6s ease-in-out;
           li {
             list-style-type: none;
             font-size: 18px;
@@ -392,13 +380,9 @@
       }
 
       .hidden {
-        display: none;
-        max-height: 0;
+        height: 0;
         overflow: hidden;
         opacity: 0;
-        transition:
-          max-height 0.3s ease-in-out,
-          opacity 0.3s ease-in-out;
       }
 
       .icon {
@@ -434,6 +418,14 @@
     align-content: center;
     max-width: 600px;
     width: 100%;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__city {
+      font-size: 18px;
+    }
 
     &__carrousel {
       .chevron {
@@ -485,8 +477,24 @@
         color: white;
         border-radius: 10px;
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
       }
+    }
+
+    &__section {
+      font-size: 18px;
+    }
+
+    .description__data {
+      font-size: 16px;
+    }
+
+    .equipement__data > li {
+      font-size: 16px;
+    }
+
+    .indicators {
+      font-size: 20px;
     }
   }
 }
