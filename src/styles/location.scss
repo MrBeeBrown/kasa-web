@@ -97,12 +97,10 @@
       min-width: 300px;
       width: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       svg {
-        position: absolute;
-        top: 0.5rem;
-        right: 1rem;
         width: 30px;
         cursor: pointer;
       }
