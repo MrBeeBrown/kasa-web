@@ -247,7 +247,6 @@
 
       .section-title {
         position: relative;
-        min-width: 300px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -319,6 +318,8 @@
     }
 
     &__carrousel {
+      width: 100%;
+      height: 255px;
       .chevron {
         width: 45px;
         height: 45px;
@@ -379,7 +380,6 @@
 
       .section-title {
         position: relative;
-        min-width: 300px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -400,7 +400,6 @@
         border-radius: 0 0 5px 5px;
         margin: 0;
         padding: 0.5rem 0.5rem;
-        font-size: 18px;
         line-height: 1.4rem;
         max-height: 300px;
         height: calc(auto);
@@ -408,9 +407,12 @@
         transition:
           height 0.6s ease-in-out,
           opacity 0.6s ease-in-out;
+        p {
+          font-size: 1rem;
+        }
         li {
           list-style-type: none;
-          font-size: 18px;
+          font-size: 1rem;
           line-height: 1.4rem;
         }
       }
