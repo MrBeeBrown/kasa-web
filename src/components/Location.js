@@ -1,9 +1,9 @@
+import { useParams } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import logements from "../data/logements.json";
 import Carousel from "./Carousel";
 import Collapse from './Collapse';
-import { useParams } from 'react-router-dom';
 import '../styles/location.scss';
 
 function Location() {
