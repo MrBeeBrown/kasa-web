@@ -4,12 +4,17 @@ import Footer from './Footer';
 import logements from "../data/logements.json";
 import Carousel from "./Carousel";
 import Collapse from './Collapse';
+import Error from './Error';
 import '../styles/location.scss';
 
 function Location() {
   const params = useParams();
 
   const logement = logements.filter((e) => e.id === params.id);
+  
+  if (logement.length === 0) {
+    return <Error />
+  }
   const hostname = logement[0].host.name.split(" ");
 
   const ratingStars = () => {
