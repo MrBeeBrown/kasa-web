@@ -1,8 +1,8 @@
-import '../styles/carousel.scss';
+import '../styles/slideshow.scss';
 import { useState } from 'react';
 
 
-function Carousel({ data }) {
+function Slideshow({ data }) {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -31,4 +31,4 @@ function Carousel({ data }) {
   )
 }
 
-export default Carousel;
+export default Slideshow;

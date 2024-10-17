@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import logements from "../data/logements.json";
-import Carousel from "./Carousel";
+import Slideshow from "./slideshow";
 import Collapse from './Collapse';
 import Error from './Error';
 import '../styles/location.scss';
@@ -37,7 +37,7 @@ function Location() {
       <Header />
       <div className='main'>
         <div className='logement'>
-          <Carousel data={logement[0].pictures} />
+          <Slideshow data={logement[0].pictures} />
           <div className='logement__infos'>
             <div className='logement_location'>
               <p className='logement__title'>{logement[0].title}</p>
