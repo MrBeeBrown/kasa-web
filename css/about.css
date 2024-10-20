@@ -24,6 +24,10 @@
   margin-bottom: 2rem;
 }
 
+.about-content {
+  padding-inline: 5rem;
+}
+
 .about-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +127,9 @@
     width: 100%;
     height: 111px;
     border-radius: 10px;
+  }
+  .about-content {
+    padding-inline: 0;
   }
   .section-panel {
     max-height: 500px;
